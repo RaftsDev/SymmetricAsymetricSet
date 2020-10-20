@@ -22,5 +22,13 @@ public class Main {
         union.addAll(cubes);
         System.out.println("Union size: " + union.size());
 
+        //Create Intersection
+
+        Set<Integer> intersection = new HashSet<>(squares);
+        intersection.retainAll(cubes);
+        System.out.println("intersection has size: " + intersection.size());
+        for(int i : intersection){
+            System.out.println(i + " is square of " + Math.sqrt(i) + " and cubes of " + Math.cbrt(i));
+        }
     }
 }
