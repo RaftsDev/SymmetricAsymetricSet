@@ -14,8 +14,13 @@ public class Main {
             squares.add(i * i);
             cubes.add(i * i * i);
         }
-
         System.out.println("Square size: " + squares.size() + " cubes size: " + cubes.size());
+
+        //Create a union
+
+        Set<Integer> union = new HashSet<>(squares);
+        union.addAll(cubes);
+        System.out.println("Union size: " + union.size());
 
     }
 }
