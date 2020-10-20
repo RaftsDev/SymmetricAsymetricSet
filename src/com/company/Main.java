@@ -24,6 +24,7 @@ public class Main {
 
         //Create Intersection
 
+        System.out.println("-------------------------------------");
         Set<Integer> intersection = new HashSet<>(squares);
         intersection.retainAll(cubes);
         System.out.println("intersection has size: " + intersection.size());
