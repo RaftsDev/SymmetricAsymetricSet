@@ -14,7 +14,7 @@ public class Main {
             squares.add(i * i);
             cubes.add(i * i * i);
         }
-        System.out.println("Square size: " + squares.size() + " cubes size: " + cubes.size());
+        System.out.println("Square size: " + squares.size() + " and cubes size: " + cubes.size());
 
         //Create a union
 
