@@ -1,5 +1,6 @@
 package com.company;
 
+import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -30,6 +31,17 @@ public class Main {
         System.out.println("intersection has size: " + intersection.size());
         for(int i : intersection){
             System.out.println(i + " is square of " + Math.sqrt(i) + " and cubes of " + Math.cbrt(i));
+        }
+
+        // Populate Set from Array
+
+        Set<String> words = new HashSet<>();
+        String sentence = "one day in the year of the fox";
+        String[] arrayWords = sentence.split(" ");
+        words.addAll(Arrays.asList(arrayWords));
+
+        for(String s : words){
+            System.out.println(s);
         }
     }
 }
