@@ -44,7 +44,7 @@ public class Main {
             System.out.println(s);
         }
 
-        //Symetric opoeration
+        //Symetric  and Asymetric operation
 
         System.out.println("---------------------------------------");
         Set<String> nature = new HashSet<>();
@@ -65,6 +65,17 @@ public class Main {
         Set<String> diff2 = new HashSet<>(divine);
         diff2.removeAll(nature);
         printSet(diff2);
+
+        Set<String> unionTest = new HashSet<>(nature);
+        unionTest.addAll(divine); // Create whole unoin
+
+        Set<String> interSectionTest = new HashSet<>(nature);
+        interSectionTest.retainAll(divine);// Get intersection
+
+        System.out.println("-----------------------------------");
+        System.out.println("Symmetric difference");
+        unionTest.removeAll(interSectionTest); // Get Symmetric difference
+        printSet(unionTest);
 
     }
     private static void printSet(Set<String> set){
