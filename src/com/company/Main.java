@@ -73,7 +73,7 @@ public class Main {
         interSectionTest.retainAll(divine);// Get intersection
 
         System.out.println("-----------------------------------");
-        System.out.println("Symmetric difference");
+        System.out.println("Symmetric difference:");
         unionTest.removeAll(interSectionTest); // Get Symmetric difference
         printSet(unionTest);
 
