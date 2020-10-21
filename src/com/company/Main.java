@@ -68,10 +68,10 @@ public class Main {
 
     }
     private static void printSet(Set<String> set){
-        System.out.println("\t");
+        System.out.print("\t");
         for(String s : set){
             System.out.print(s + " ");
         }
-        System.out.println();
+        System.out.println("");
     }
 }
