@@ -46,6 +46,7 @@ public class Main {
 
         //Symetric opoeration
 
+        System.out.println("---------------------------------------");
         Set<String> nature = new HashSet<>();
         Set<String> divine = new HashSet<>();
 
