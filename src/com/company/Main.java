@@ -44,6 +44,33 @@ public class Main {
             System.out.println(s);
         }
 
+        //Symetric opoeration
 
+        Set<String> nature = new HashSet<>();
+        Set<String> divine = new HashSet<>();
+
+        String[] natureWords = {"all", "nature", "is", "but", "art", "unknown", "to", "thee"};
+        nature.addAll(Arrays.asList(natureWords));
+
+        String[] divineWords = {"to", "err", "is", "human", "to", "forgive", "divine"};
+        divine.addAll(Arrays.asList(divineWords));
+
+        System.out.println("nature-divine:");
+        Set<String> diff1 = new HashSet<>(nature);
+        diff1.removeAll(divine);
+        printSet(diff1);
+
+        System.out.println("divine-nature:");
+        Set<String> diff2 = new HashSet<>(divine);
+        diff2.removeAll(nature);
+        printSet(diff2);
+
+    }
+    private static void printSet(Set<String> set){
+        System.out.println("\t");
+        for(String s : set){
+            System.out.println(s + " ");
+        }
+        System.out.println();
     }
 }
