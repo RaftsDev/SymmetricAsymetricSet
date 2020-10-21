@@ -70,7 +70,7 @@ public class Main {
     private static void printSet(Set<String> set){
         System.out.println("\t");
         for(String s : set){
-            System.out.println(s + " ");
+            System.out.print(s + " ");
         }
         System.out.println();
     }
