@@ -79,6 +79,8 @@ public class Main {
 
         //Set contains other Set
 
+        sout
+
         if(nature.containsAll(divine)){
             System.out.println("divine is a subset of nature");
         }
