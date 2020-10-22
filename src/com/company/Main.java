@@ -79,6 +79,7 @@ public class Main {
 
         //Set contains other Set
 
+        System.out.println("");
         System.out.println(" ----------------  Subsets --------------------");
 
         if(nature.containsAll(divine)){
